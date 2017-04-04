@@ -6,6 +6,7 @@ public class Main {
 		System.out.println("Hola");
 		
 		int uno=1;
+		double numero=0.0;
 
 	}
 
