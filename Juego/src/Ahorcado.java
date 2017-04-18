@@ -40,7 +40,41 @@ public class Ahorcado {
 		case 10: palabra = "sevilla";
 		break;
 		}
-		
+		 char []psecreta = palabra.toCharArray();
+		    int aciertos=0;
+				System.out.println("Tamaño de la palabra es " + palabra.length());
+		    char []aux=new char[palabra.length()];
+				for (int i=0;i<palabra.length();i++){
+		        aux[i]='_';
+		    }
+				while(error != 3){
+		        for (int i=0;i<palabra.length();i++)
+		            System.out.print(aux[i]);
+		        System.out.println(" ingrese una letra " + ", Errores: "+ error);
+		        letra=t.next();
+		        l=letra.toCharArray()[0];
+
+		        if(checar(letra, palabra)){
+
+		            for (int i=0;i<palabra.length();i++){
+		                if(psecreta[i]==l)
+		                {
+		                    aciertos++;
+		                    aux[i]=l;
+		                }
+		            }
+		        }else{
+		            error++;
+		            if(error == 3){
+		                System.out.println("Perdiste!");
+		                break;
+		            }
+		        }
+		        if(aciertos == palabra.length()){
+		            System.out.println("Ganaste!!! La palabra era " + palabra);
+		            break;
+		        }
+				}
 		
 	}
 }
