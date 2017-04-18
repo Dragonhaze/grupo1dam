@@ -7,6 +7,8 @@ public class Main {
 		
 		int uno=1;
 		double numero=0.0;
+		System.out.println("Adios");
+		
 
 	}
 
