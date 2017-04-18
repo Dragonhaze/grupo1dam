@@ -2,7 +2,7 @@ import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 
 import java.util.Scanner;
 
-public class Juego1 {
+public class Acertijo {
 	
 	//Complements
 	
@@ -11,11 +11,11 @@ public class Juego1 {
 	
 	//Constructor
 	
-	public Juego1() {
+	public Acertijo() {
 		
 	}
 
-	public Juego1( String verdad) {
+	public Acertijo( String verdad) {
 		
 		this.verdad = verdad;
 	}
