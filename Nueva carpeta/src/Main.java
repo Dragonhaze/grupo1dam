@@ -10,6 +10,11 @@ public class Main {
 =======
 		int uno=1;
 		double numero=0.0;
+<<<<<<< HEAD
+		System.out.println("Adios");
+		
+=======
+>>>>>>> branch 'master' of https://github.com/Dragonhaze/grupo1dam.git
 >>>>>>> branch 'master' of https://github.com/Dragonhaze/grupo1dam.git
 
 	}
