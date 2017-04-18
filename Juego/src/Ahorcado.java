@@ -37,7 +37,7 @@ public class Ahorcado {
 		break;
 		case 9: palabra = "junit";
 		break;
-		case 10: palabra = "seville";
+		case 10: palabra = "sevilla";
 		break;
 		}
 		 char []psecreta = palabra.toCharArray();
