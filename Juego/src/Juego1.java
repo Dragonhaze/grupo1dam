@@ -1,5 +1,6 @@
 import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 
+import java.util.Scanner;
 
 public class Juego1 {
 	
@@ -51,6 +52,14 @@ public class Juego1 {
 	@Override
 	public String toString() {
 		return "Juego1 [verdad=" + verdad + "]";
+	}
+	
+	//Methods
+	
+	public void añadirRespuesta(int respueta){
+		Scanner input = new Scanner(System.in);
+		System.out.println("introduzca respuesta");
+		 int index = input.nextInt();
 	}
 	
 }
