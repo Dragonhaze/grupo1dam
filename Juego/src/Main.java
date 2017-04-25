@@ -1,10 +1,16 @@
 import java.util.Scanner;
-
+/**
+ * 
+ * @author dunca
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {
 		int userInput;
-		
+		/**
+		 * Menu para que el usuario elija el juego.
+		 */
 		System.out.println("Elige uno de los siguientes juegos");
 		System.out.println("Introduce 1 para un acertijo");
 		System.out.println("Introduce 2 para jugar al ahorcado");
@@ -14,7 +20,9 @@ public class Main {
 		
 		userInput = input.nextInt();
 		
-		
+		/**
+		 * Elección del juego 1
+		 */
 		if(userInput==1){
 		Acertijo juego1 = new Acertijo();
 		
@@ -22,11 +30,16 @@ public class Main {
 
 		juego1.añadirRespuesta(5);
 		}
-		
+		/**
+		 * Elección del juego 2
+		 */
 		if(userInput==2){
 			Ahorcado test = new Ahorcado();
 			Ahorcado.main(args);
 		}
+		/**
+		 * Elección del juego 3
+		 */
 		if(userInput==3){
 			AdivinarNum test2 = new AdivinarNum();
 			test2.empiezaJuego();

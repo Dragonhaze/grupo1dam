@@ -8,8 +8,6 @@ import java.util.Scanner;
 public class AdivinarNum {
 	/**
 	 * <h1>Variables</h1>
-	 * 
-	 *
 	 */
 	int max;	
 	int min;
@@ -44,8 +42,8 @@ public class AdivinarNum {
 	
 	
 	
-	/*
-	 * Se inicia el juego y se inicializa las variables desadas.
+	/**
+	 *  Se inicia el juego y se inicializa las variables desadas.
 	 * 
 	 * @param max: Es el numero máximo en el que puede estar el número pensado por el usuario.
 	 * @param min: Es el numero minimo en el que puede estar el número pensado por el usuario.
