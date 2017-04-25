@@ -1,7 +1,18 @@
 import java.util.Random;
+
 import java.util.Scanner;
+/**
+ * 
+ * @author David
+ *
+ */
 public class Ahorcado {
-	
+	/**
+	 * @author David
+	 * @param l secuencia para las letras
+	 * @param palabra variable 
+	 * @return chec
+	 */
 	public static boolean checar(CharSequence l, String palabra){
 		boolean chec;
 		chec = palabra.contains(l);
@@ -18,7 +29,10 @@ public class Ahorcado {
 		String letra = "";
 		char l;
 		switch(r){
-
+		/**
+		 * Switch que elegirá aleatoriamente una palabra u otra a mostrar para el usuario
+		 * @author David
+		 */
 		case 1: palabra = "java";
 		break;
 		case 2: palabra = "computador";
@@ -40,14 +54,24 @@ public class Ahorcado {
 		case 10: palabra = "sevilla";
 		break;
 		}
+		/**
+		 * Array de char para saber los aciertos
+		 */
 		 char []psecreta = palabra.toCharArray();
 		    int aciertos=0;
+		    
 				System.out.println("Tamaño de la palabra es " + palabra.length());
+		/**
+		 * array para colocar las letras correctas en los espacios en blanco
+		 */
 		    char []aux=new char[palabra.length()];
 				for (int i=0;i<palabra.length();i++){
 		        aux[i]='_';
 		    }
 				while(error != 3){
+		/**
+		 * array 
+		 */
 		        for (int i=0;i<palabra.length();i++)
 		            System.out.print(aux[i]);
 		        System.out.println(" ingrese una letra " + ", Errores: "+ error);
