@@ -32,5 +32,7 @@ public class Main {
 			test2.empiezaJuego();
 		}
 	}
+	
+	
 
 }

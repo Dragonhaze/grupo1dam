@@ -4,17 +4,25 @@ import java.util.Scanner;
 
 public class Acertijo {
 	
+	
 	//Complements
 	
+	/**
+	 * <p>Declaramos los atributos verdad y respuesta
+	 * con sus tipos respectivamente</p>
+	 */
 	private String verdad;
 	private int respuesta;
 	
 	//Constructor
 	
+	/**
+	 * Constructor por defecto
+	 */
 	public Acertijo() {
 		
 	}
-
+	
 	public Acertijo( String verdad) {
 		
 		this.verdad = verdad;
